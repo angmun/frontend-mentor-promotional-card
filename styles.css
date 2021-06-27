@@ -34,19 +34,23 @@ body {
 	width: 50%;
 }
 #card__info {
+	display: flex;
 	background-color: var(--card-background);
 	padding: 55px;
 }
-#card__info > h1 {
+#info__wrapper {
+	margin: auto 0;
+}
+#info__wrapper > h1 {
 	font-family: 'Inter', sans-serif;
 	font-size: 30px;
 	font-size: 700;
 	color: var(--text-white);
 }
-#card__info > h1 span {
+#info__wrapper > h1 span {
 	color: var(--accent);
 }
-#card__info > p {
+#info__wrapper > p {
 	padding: 20px 0;
 	line-height: 25px;
 	font-family: 'Lexend Deca', sans-serif;
@@ -89,6 +93,8 @@ body {
 	background-color: var(--accent-opacity-5);
 }
 #card__image img {
+	object-fit: cover;
+	min-width: 100%;
 	height: 100%;
 }
 .attribution {
@@ -127,10 +133,6 @@ body {
 	#card__info,
 	#card__image {
 		width: 100%;
-	}
-	#card__image img {
-		width: 100%;
-		height: auto;
 	}
 	#card__info {
 		padding: 20px;
